@@ -1,0 +1,22 @@
+=== general-T series:  E = (D-1)pi/16R - pi M trT^-1/(48R^2) + pi M^2 trT^-2/(48R^3) + O(R^-4) ===
+N=3 eig(T)=[0.6784 1.2325 1.9109]  trT^-1=2.80870 trT^-2=3.10489
+   R=    5: exact 0.1144763502 series 0.1145395682 resid -6.322e-05
+   R=   10: exact 0.0580321182 series 0.0580365195 resid -4.401e-06  ratio prev/this=14.36 (16 expected for R^-4)
+   R=   20: exact 0.0292287026 series 0.0292289950 resid -2.924e-07  ratio prev/this=15.05 (16 expected for R^-4)
+   R=   40: exact 0.0146695438 series 0.0146695627 resid -1.888e-08  ratio prev/this=15.49 (16 expected for R^-4)
+N=5 eig(T)=[2.1101 5.3948 7.3335]  trT^-1=0.79564 trT^-2=0.27754
+   R=    5: exact 0.1168023927 series 0.1168045707 resid -2.178e-06
+   R=   10: exact 0.0586488904 series 0.0586490325 resid -1.421e-07  ratio prev/this=15.33 (16 expected for R^-4)
+   R=   20: exact 0.0293878969 series 0.0293879060 resid -9.080e-09  ratio prev/this=15.65 (16 expected for R^-4)
+   R=   40: exact 0.0147100128 series 0.0147100133 resid -5.741e-10  ratio prev/this=15.82 (16 expected for R^-4)
+
+=== symmetric N-star: tr T^-1, trT^-2 vs eqs (10),(11) (D=4) ===
+N=3: trT^-1=1.666667 (D+1)/(N sigma)=1.666667 | trT^-2=1.000000 (D+5)/N^2=1.000000
+N=4: trT^-1=1.250000 (D+1)/(N sigma)=1.250000 | trT^-2=0.562500 (D+5)/N^2=0.562500
+N=6: trT^-1=0.833333 (D+1)/(N sigma)=0.833333 | trT^-2=0.250000 (D+5)/N^2=0.250000
+N=8: trT^-1=0.625000 (D+1)/(N sigma)=0.625000 | trT^-2=0.140625 (D+5)/N^2=0.140625
+
+=== NG-quartic O(L^-3) piece for the N-star (my Wick/zeta computation, using Lou-Zhong's coincident-limit integrals) ===
+coef = -pi**2*(-2*N*d + 2*N + 3*d)**2/(4608*N)
+N=3 : -pi**2*(d - 2)**2/1536   Lou-Zhong: -(d-2)^2 pi^2/1536 -> 0
+N->oo: -pi**2*(d - 1)**2/1152   per-string; single DD string NG: -(d-1)^2 pi^2/1152 -> 0

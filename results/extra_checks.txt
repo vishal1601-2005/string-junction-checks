@@ -1,0 +1,32 @@
+(a) offset C(eps)=DeltaE-Erel ; slope vs ln(1/eps) -> Sigma/(2 pi M)
+   eps=0.00500 C=2.840406 slope=0.89659  target 0.95493
+   eps=0.00250 C=3.481171 slope=0.92443  target 0.95493
+   eps=0.00125 C=4.132223 slope=0.93927  target 0.95493
+
+(b) general S-matrix: weighted unitarity, Kirchhoff limit, quantisation det(1+S E)
+   k=0.1: ||S^dag Sg S - Sg|| = 1.50e-15
+   k=0.7: ||S^dag Sg S - Sg|| = 2.13e-15
+   k=3.0: ||S^dag Sg S - Sg|| = 8.39e-16
+   M->0 eigenvalues of S: #(+1) = 3 (expect D-1=3), #(-1) = 5 (expect 2N-3=5)
+   M->inf: 1.876221850569013e-11
+   |det(1+S E)| at roots of Phi: [7.5e-15 8.1e-16 1.2e-15 1.8e-13 8.6e-12 1.5e-12]   (typical |det| at generic k: 8.179 )
+
+(c) first-order criterion: star unstable to fusing two adjacent arms iff sigma_2 < 2 sigma cos(pi/N)
+   N=4: Casimir sigma_2/sigma=1.3333  sine-law=1.4142  threshold 2cos(pi/N)=1.4142
+   N=5: Casimir sigma_2/sigma=1.5000  sine-law=1.6180  threshold 2cos(pi/N)=1.6180
+   N=6: Casimir sigma_2/sigma=1.6000  sine-law=1.7321  threshold 2cos(pi/N)=1.7321
+   N=8: Casimir sigma_2/sigma=1.7143  sine-law=1.8478  threshold 2cos(pi/N)=1.8478
+   N=4 'H' config (pairs (0,1),(2,3) fused), star energy = 4:
+      sigma_2=1.3000: min E_H = 3.98789616   (<4 => star unstable)  V1=[0.0723 0.0723]
+      sigma_2=1.3600: min E_H = 3.99716747   (<4 => star unstable)  V1=[0.0363 0.0363]
+      sigma_2=1.4142: min E_H = 4.00000000   (<4 => star unstable)  V1=[0. 0.]
+      sigma_2=1.4500: min E_H = 4.00000000   (<4 => star unstable)  V1=[0. 0.]
+      sigma_2=1.6000: min E_H = 4.00000000   (<4 => star unstable)  V1=[0. 0.]
+
+(d) unequal arms, M=0.5, 3 arms sigma=1 (scalar channel): cutoff mode-sum vs integral
+   eps=0.08: root-count offsets (should be 0 or 1): [1, 1, 1]
+      lambda=1.5: [DE(l)-DE(1)] = -0.012806   [Erel(l)-Erel(1)] = -0.012811
+      lambda=2.0: [DE(l)-DE(1)] = -0.019246   [Erel(l)-Erel(1)] = -0.019252
+   eps=0.04: root-count offsets (should be 0 or 1): [1, 1, 1]
+      lambda=1.5: [DE(l)-DE(1)] = -0.012810   [Erel(l)-Erel(1)] = -0.012811
+      lambda=2.0: [DE(l)-DE(1)] = -0.019250   [Erel(l)-Erel(1)] = -0.019252

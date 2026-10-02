@@ -1,0 +1,7 @@
+isosceles limits: difference to Lou-Zhong (5.3),(5.4) should shrink like 1/ratio
+d=3 ratio=   200:  (5.3) diff -1.63e-03   (5.4) diff -1.30e-03
+d=3 ratio=  2000:  (5.3) diff -1.64e-04   (5.4) diff -1.31e-04
+d=3 ratio= 20000:  (5.3) diff -1.64e-05   (5.4) diff -1.31e-05
+d=4 ratio=   200:  (5.3) diff -2.93e-03   (5.4) diff -1.95e-03
+d=4 ratio=  2000:  (5.3) diff -2.94e-04   (5.4) diff -1.96e-04
+d=4 ratio= 20000:  (5.3) diff -2.95e-05   (5.4) diff -1.96e-05

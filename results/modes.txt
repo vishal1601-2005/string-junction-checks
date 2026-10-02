@@ -1,0 +1,47 @@
+=== Test A: equal arms R=5, random non-planar balanced junctions (D=4) ===
+N=3: force balance |sum s t| = 1.1e-16, tr T=7.395294  (D-2)*sum s=7.395294
+   eig(T) = [0.57561 3.12203 3.69765]
+   channel 0 (Sigma=0.5756) halfbead=False: analytic [0.26836 0.81883 1.39465]  err [+7.25e-04 +1.60e-03 +1.63e-03]
+   channel 0 (Sigma=0.5756) halfbead=True: analytic [0.26836 0.81883 1.39465]  err [-1.13e-06 -3.03e-05 -1.40e-04]
+   channel 1 (Sigma=3.1220) halfbead=False: analytic [0.30442 0.91343 1.52295]  err [+9.76e-04 +2.85e-03 +4.49e-03]
+   channel 1 (Sigma=3.1220) halfbead=True: analytic [0.30442 0.91343 1.52295]  err [-1.37e-06 -3.69e-05 -1.71e-04]
+   channel 2 (Sigma=3.6976) halfbead=False: analytic [0.30589 0.91778 1.52999]  err [-4.99e-04 -1.51e-03 -2.56e-03]
+   channel 2 (Sigma=3.6976) halfbead=True: analytic [0.30589 0.91778 1.52999]  err [-1.38e-06 -3.71e-05 -1.72e-04]
+   Dirichlet-tower multiplicity at k=pi/R: found 3, predicted N(D-2)-(D-1) = 3
+N=4: force balance |sum s t| = 0.0e+00, tr T=12.096945  (D-2)*sum s=12.096945
+   eig(T) = [1.13209 5.10129 5.86356]
+   channel 0 (Sigma=1.1321) halfbead=False: analytic [0.28879 0.86917 1.45647]  err [+8.67e-04 +2.31e-03 +3.09e-03]
+   channel 0 (Sigma=1.1321) halfbead=True: analytic [0.28879 0.86917 1.45647]  err [-1.28e-06 -3.43e-05 -1.58e-04]
+   channel 1 (Sigma=5.1013) halfbead=False: analytic [0.30812 0.92441 1.54082]  err [+1.00e-03 +2.95e-03 +4.75e-03]
+   channel 1 (Sigma=5.1013) halfbead=True: analytic [0.30812 0.92441 1.54082]  err [-1.39e-06 -3.75e-05 -1.73e-04]
+   channel 2 (Sigma=5.8636) halfbead=False: analytic [0.30889 0.92671 1.5446 ]  err [+2.30e-04 +6.54e-04 +9.67e-04]
+   channel 2 (Sigma=5.8636) halfbead=True: analytic [0.30889 0.92671 1.5446 ]  err [-1.39e-06 -3.76e-05 -1.74e-04]
+   Dirichlet-tower multiplicity at k=pi/R: found 5, predicted N(D-2)-(D-1) = 5
+N=5: force balance |sum s t| = 0.0e+00, tr T=10.895877  (D-2)*sum s=10.895877
+   eig(T) = [2.57825 3.66588 4.65175]
+   channel 0 (Sigma=2.5783) halfbead=False: analytic [0.30244 0.90763 1.51369]  err [+9.63e-04 +2.79e-03 +4.33e-03]
+   channel 0 (Sigma=2.5783) halfbead=True: analytic [0.30244 0.90763 1.51369]  err [-1.36e-06 -3.66e-05 -1.69e-04]
+   channel 1 (Sigma=3.6659) halfbead=False: analytic [0.30582 0.91758 1.52966]  err [+9.86e-04 +2.89e-03 +4.59e-03]
+   channel 1 (Sigma=3.6659) halfbead=True: analytic [0.30582 0.91758 1.52966]  err [-1.38e-06 -3.71e-05 -1.72e-04]
+   channel 2 (Sigma=4.6517) halfbead=False: analytic [0.30755 0.92271 1.53803]  err [-7.42e-04 -2.24e-03 -3.78e-03]
+   channel 2 (Sigma=4.6517) halfbead=True: analytic [0.30755 0.92271 1.53803]  err [-1.38e-06 -3.74e-05 -1.73e-04]
+   Dirichlet-tower multiplicity at k=pi/R: found 7, predicted N(D-2)-(D-1) = 7
+N=7: force balance |sum s t| = 0.0e+00, tr T=26.101863  (D-2)*sum s=26.101863
+   eig(T) = [ 1.92176 11.5453  12.6348 ]
+   channel 0 (Sigma=1.9218) halfbead=False: analytic [0.29865 0.89664 1.49654]  err [+9.37e-04 +2.66e-03 +3.99e-03]
+   channel 0 (Sigma=1.9218) halfbead=True: analytic [0.29865 0.89664 1.49654]  err [-1.34e-06 -3.60e-05 -1.66e-04]
+   channel 1 (Sigma=11.5453) halfbead=False: analytic [0.31146 0.93439 1.55733]  err [+1.02e-03 +3.04e-03 +4.94e-03]
+   channel 1 (Sigma=11.5453) halfbead=True: analytic [0.31146 0.93439 1.55733]  err [-1.40e-06 -3.79e-05 -1.75e-04]
+   channel 2 (Sigma=12.6348) halfbead=False: analytic [0.31169 0.93508 1.55848]  err [+7.94e-04 +2.34e-03 +3.79e-03]
+   channel 2 (Sigma=12.6348) halfbead=True: analytic [0.31169 0.93508 1.55848]  err [-1.41e-06 -3.79e-05 -1.76e-04]
+   Dirichlet-tower multiplicity at k=pi/R: found 11, predicted N(D-2)-(D-1) = 11
+
+=== Test B: unequal arms, characteristic function Phi(k)=prod sin^2 * det[Mk - sum s cot P] ===
+N=3, R=[4.  5.  6.3]: #roots(Phi)=8, #discrete modes below 0.9=8
+   max |disc - analytic| over matched modes: 7.99688116226438e-06
+   first 6 analytic: [0.26979 0.28566 0.32368 0.55338 0.57683 0.72549]
+   first 6 discrete: [0.26979 0.28566 0.32368 0.55337 0.57683 0.72548]
+N=4, R=[4.  5.  6.3 5.4]: #roots(Phi)=9, #discrete modes below 0.9=9
+   max |disc - analytic| over matched modes: 5.4343068700557495e-06
+   first 6 analytic: [0.20041 0.30203 0.30278 0.52216 0.52757 0.60715]
+   first 6 discrete: [0.20041 0.30203 0.30278 0.52215 0.52756 0.60714]

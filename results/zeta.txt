@@ -1,0 +1,17 @@
+Single channel, M=0.5, Sigma=3.  Mode-sum with smooth cutoff exp(-eps k) vs eq.(6)
+Erel(R) from quadrature: {3.0: 0.06429986, 5.0: 0.03884741, 8.0: 0.02437669, 12.0: 0.01628774}
+
+eps    DeltaE(R)-DeltaE(R=12) [mode sum]  vs  Erel(R)-Erel(12) [eq.6]
+ 0.08  R=   3: +0.047986 vs +0.048012   R=   5: +0.022554 vs +0.022560   R=   8: +0.008088 vs +0.008089
+ 0.04  R=   3: +0.048006 vs +0.048012   R=   5: +0.022558 vs +0.022560   R=   8: +0.008089 vs +0.008089
+ 0.02  R=   3: +0.048010 vs +0.048012   R=   5: +0.022559 vs +0.022560   R=   8: +0.008089 vs +0.008089
+ 0.01  R=   3: +0.048012 vs +0.048012   R=   5: +0.022560 vs +0.022560   R=   8: +0.008089 vs +0.008089
+
+offset C(eps)=DeltaE-Erel at different R (should be R-independent as eps->0), and slope vs ln eps
+eps= 0.08  C(R) = +0.664764 +0.664785 +0.664789 +0.664790
+eps= 0.04  C(R) = +1.103902 +1.103907 +1.103908 +1.103909
+          dC/dln(1/eps) ~ +0.63352   (predicted Sig/(2 pi M) = +0.95493)
+eps= 0.02  C(R) = +1.632176 +1.632178 +1.632178 +1.632178
+          dC/dln(1/eps) ~ +0.76213   (predicted Sig/(2 pi M) = +0.95493)
+eps= 0.01  C(R) = +2.218935 +2.218935 +2.218935 +2.218935
+          dC/dln(1/eps) ~ +0.84651   (predicted Sig/(2 pi M) = +0.95493)

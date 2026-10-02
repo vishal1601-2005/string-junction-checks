@@ -1,0 +1,5 @@
+trivalent junction, arbitrary tensions (triangle inequality), planar, force balance from tension triangle
+ sigma=[1.373 0.641 1.15 ] |force|=2.2e-16  trTinplane^-1: num 1.883097 formula 1.883097 | trT^-2: num 2.355775 formula 2.355775 | tr T=3.16413 sum sigma=3.16413
+ sigma=[1.219 0.74  1.602] |force|=1.1e-16  trTinplane^-1: num 1.948352 formula 1.948352 | trT^-2: num 2.701512 formula 2.701512 | tr T=3.56005 sum sigma=3.56005
+ sigma=[0.671 1.087 1.275] |force|=3.1e-16  trTinplane^-1: num 1.749775 formula 1.749775 | trT^-2: num 1.907682 formula 1.907682 | tr T=3.03246 sum sigma=3.03246
+ sigma=[1.146 1.38  1.607] |force|=5.0e-16  trTinplane^-1: num 1.058751 formula 1.058751 | trT^-2: num 0.608600 formula 0.608600 | tr T=4.13290 sum sigma=4.13290
