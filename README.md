@@ -7,9 +7,11 @@ Python scripts that reproduce every numerical statement in the manuscript
 ## Quick start
 ```bash
 pip install -r requirements.txt
-bash run_all.sh          # about a minute on a laptop
+bash run_all.sh          # a few minutes on a laptop
 ```
 Tested with Python 3, numpy 2.4, scipy 1.17, sympy 1.14, mpmath 1.3.
+
+Note: `closed_channel*.py` find mode frequencies by sign changes of the characteristic function, so exactly degenerate arm lengths (e.g. equal arms) are deliberately avoided there; near-equal arms are used instead.
 
 ## What each script checks
 | Script | Checks | Manuscript |
@@ -20,6 +22,8 @@ Tested with Python 3, numpy 2.4, scipy 1.17, sympy 1.14, mpmath 1.3.
 | `extra_checks.py` | (a) log-divergence coefficient tr T/(2 pi M); (b) S-matrix weighted unitarity, Kirchhoff limit, det(1+SE)=0 at the roots; (c) fusion criterion and N=4 "H" minimization; (d) unequal arms with M != 0, mode sum vs. integral | Secs. 4, 7, 8 |
 | `lz_check.py`, `lz_iso.py` | Determinant formula (M=0, N=3) vs. Lou-Zhong Table 2 and isosceles limits | Table 1 |
 | `series_and_quartic.py` | Large-R series (residual ~ R^-4), star traces, general-N Nambu-Goto quartic algebra (symbolic) | Secs. 5, 6, App. B |
+| `closed_channel.py` | Closed-channel tests for the planar trivalent junction: near-equal arms vs. Komargodski-Zhong (27); unequal arms vs. the s-wave prediction (locality of the vertex); O(M) coefficient vs. tr T^-1/12 | Sec. 8, Table 2 |
+| `closed_channel_general.py` | Gaussian normalization vs. exact Bessel integral (d=2); generic non-planar N=4 junction with unequal tensions and arms vs. the general closed-channel prediction | Sec. 8, Table 2 |
 | `trivalent.py` | Closed forms for tr T^-1, tr T^-2 of trivalent k-string junctions | Sec. 5 |
 
 Reference outputs from the version used in the paper are in `results/`.

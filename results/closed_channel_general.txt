@@ -1,0 +1,21 @@
+=== (1) Gaussian-integral normalisation vs exact Bessel propagators (d=2, three arms at 120 deg, R=l_s=1) ===
+/usr/local/lib/python3.12/dist-packages/scipy/integrate/_quadpack_py.py:1286: IntegrationWarning: The maximum number of subdivisions (50) has been achieved.
+  If increasing the limit yields no improvement it is advised to analyze 
+  the integrand in order to determine the difficulties.  If the position of a 
+  local difficulty can be determined (singularity, discontinuity) one will 
+  probably gain from splitting up the interval and calling the integrator 
+  on the subranges.  Perhaps a special-purpose integrator should be used.
+  quad_r = quad(f, low, high, args=args, full_output=self.full_output,
+   L=  4.0:  numeric/mine = 0.9984    numeric/(mine*pi) = 0.3178   (pi=3.1416)
+   L=  8.0:  numeric/mine = 0.9991    numeric/(mine*pi) = 0.3180   (pi=3.1416)
+   L= 16.0:  numeric/mine = 0.9945    numeric/(mine*pi) = 0.3166   (pi=3.1416)
+
+=== (2) general junction: N=4 non-planar, unequal tensions, unequal arms, D=4 (d=3), R=1 ===
+   tensions: [1.276  0.7972 1.2721 1.5368]  |force|=0.0e+00
+   M=0, L_a=[3.   3.51 3.93 4.56]: ln(Z_open/Z_pred) = +2.348e-03   sum_a q~_a=3.87e-03  ratio=0.61   root-count offset 2
+   M=0, L_a=[4.   4.68 5.24 6.08]: ln(Z_open/Z_pred) = +2.742e-04   sum_a q~_a=4.55e-04  ratio=0.60   root-count offset 0
+   M=0, L_a=[6.   7.02 7.86 9.12]: ln(Z_open/Z_pred) = +4.143e-06   sum_a q~_a=7.10e-06  ratio=0.58   root-count offset 2
+   O(M): d lnZ/dM  vs  trT^-1/12 = 0.083417
+      L_a=[4.   4.68 5.24 6.08]: dlnZ/dM = 0.083615
+      L_a=[6.   7.02 7.86 9.12]: dlnZ/dM = 0.083420
+      L_a=[ 8.    9.36 10.48 12.16]: dlnZ/dM = 0.083417

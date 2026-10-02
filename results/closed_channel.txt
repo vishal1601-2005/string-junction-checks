@@ -1,0 +1,19 @@
+=== (1) near-equal arms (1,1.002,1.004)*L: open-channel numerics vs Komargodski-Zhong modular form (27) at mean L ===
+   L/R=2.0: ln Z numerics 0.63866087   KZ(27) 0.63866018   diff +6.93e-07   root-count offsets (0, 0)
+   L/R=3.0: ln Z numerics 0.52947472   KZ(27) 0.52947406   diff +6.65e-07   root-count offsets (0, 0)
+   L/R=4.0: ln Z numerics 0.59793352   KZ(27) 0.59793285   diff +6.64e-07   root-count offsets (0, 0)
+
+=== (2) UNEQUAL arms, M=0: ratio Z_open / Z_closed-channel-prediction (should -> 1 as q~ -> 0) ===
+   L_a=[2.    2.472 3.162]: ln(ratio)=+1.998e-04   q~_x q~_y=1.30e-04  ln(ratio)/(q~_x q~_y)=1.53   root offsets (0, 0)
+   L_a=[3.    3.708 4.743]: ln(ratio)=+2.256e-06   q~_x q~_y=1.49e-06  ln(ratio)/(q~_x q~_y)=1.51   root offsets (0, 1)
+   L_a=[4.    4.944 6.325]: ln(ratio)=+2.903e-08   q~_x q~_y=1.70e-08  ln(ratio)/(q~_x q~_y)=1.70   root offsets (0, 0)
+   L_a=[6.    7.416 9.487]: ln(ratio)=+6.215e-12   q~_x q~_y=2.22e-12  ln(ratio)/(q~_x q~_y)=2.80   root offsets (0, 0)
+   L_a=[ 8.     9.889 12.649]: ln(ratio)=+4.441e-16   q~_x q~_y=2.90e-16  ln(ratio)/(q~_x q~_y)=1.53   root offsets (0, 0)
+
+=== (3) O(M) term: d lnZ/dM (quantum part) vs tr T^-1/(12 R)  [5/36 = 0.138889 for d=3, sigma=1; exactly equal arms are skipped: degenerate roots are invisible to sign-change root finding] ===
+   near-eq  L_a=[2.99 3.   3.01]: dlnZ/dM = 0.14717
+   near-eq  L_a=[4.99 5.   5.01]: dlnZ/dM = 0.13904
+   near-eq  L_a=[7.98 8.   8.02]: dlnZ/dM = 0.13889
+   unequal  L_a=[3.   3.71 4.74]: dlnZ/dM = 0.14241
+   unequal  L_a=[5.   6.18 7.91]: dlnZ/dM = 0.13894
+   unequal  L_a=[ 8.    9.89 12.65]: dlnZ/dM = 0.13889
