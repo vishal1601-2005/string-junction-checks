@@ -1,0 +1,29 @@
+=== (A) planar trivalent, equal tensions 120 deg, D=4: roots-based Z_open vs exact identity ===
+  M=0.0 L=[2.   2.47 3.16]  ln(open/ground)=+1.9981e-04  identity=+1.9981e-04  residual=-5.3e-15
+  M=0.0 L=[3.   3.71 4.74]  ln(open/ground)=+2.2560e-06  identity=+2.2560e-06  residual=-4.0e-15
+  M=0.3 L=[2.   2.47 3.16]  ln(open/ground)=+8.0500e-03  identity=+8.0500e-03  residual=-6.4e-16
+  M=0.3 L=[3.   3.71 4.74]  ln(open/ground)=+8.9750e-04  identity=+8.9750e-04  residual=+2.5e-15
+  M=0.7 L=[2.   2.47 3.16]  ln(open/ground)=+1.5459e-02  identity=+1.5459e-02  residual=-3.7e-15
+  M=0.7 L=[3.   3.71 4.74]  ln(open/ground)=+1.7441e-03  identity=+1.7441e-03  residual=-2.3e-15
+
+=== (B) generic NON-planar N=4 (random tensions/directions/arms), D=4, roots vs identity ===
+  M=0.0 L=[3.   3.51 3.93 4.56]  ln(open/ground)=+2.3480e-03  identity=+2.3480e-03  residual=-2.8e-15
+  M=0.0 L=[4.   4.68 5.24 6.08]  ln(open/ground)=+2.7422e-04  identity=+2.7422e-04  residual=-1.7e-15
+  M=0.4 L=[3.   3.51 3.93 4.56]  ln(open/ground)=+2.9534e-03  identity=+2.9534e-03  residual=+5.7e-16
+  M=0.4 L=[4.   4.68 5.24 6.08]  ln(open/ground)=+3.4437e-04  identity=+3.4437e-04  residual=+7.6e-16
+
+=== (C) first-excitation coefficients c_a = (d-1) - 2 s_a tr(T^-1 P_a) ===
+  generic N=4 junction above:  c_a = [0.5408 0.9699 0.2895 0.1997]  (sum = N(d-1)-2d = 2 )
+  check: ln(open/ground) = 2.3480e-03  vs  sum_a c_a qt_a = 2.3411e-03
+
+=== (D) selection-rule scan: symmetric N-star, c = (d-1) - 2d/N  (vanishes iff N(d-1)=2d) ===
+  d=2 (D=3): c(N=3..8) = [-0.333, 0.0, 0.2, 0.333, 0.429, 0.5]  vanishes for N = [4]
+  d=3 (D=4): c(N=3..8) = [0.0, 0.5, 0.8, 1.0, 1.143, 1.25]  vanishes for N = [3]
+  d=4 (D=5): c(N=3..8) = [0.333, 1.0, 1.4, 1.667, 1.857, 2.0]  vanishes for N = []
+  d=5 (D=6): c(N=3..8) = [0.667, 1.5, 2.0, 2.333, 2.571, 2.75]  vanishes for N = []
+  d=6 (D=7): c(N=3..8) = [1.0, 2.0, 2.6, 3.0, 3.286, 3.5]  vanishes for N = []
+
+  explicit check d=2 (D=3), symmetric N=4 star: first-order term must vanish
+   c_a = [0. 0. 0. 0.]
+   L=2.0: ln(open/ground)=6.7126e-04   qt^2=3.3546e-04   ratio to qt^2 = 2.001
+   L=3.0: ln(open/ground)=1.2289e-05   qt^2=6.1442e-06   ratio to qt^2 = 2.000

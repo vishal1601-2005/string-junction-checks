@@ -1,7 +1,7 @@
 # string-junction-checks
 
 Python scripts that reproduce every numerical statement in the manuscript
-**"Quantum fluctuations of general confining-string junctions: spectrum, exact one-loop energy, and Z_N junctions"**
+**"Beyond the baryon: one-loop spectra and closed-string vertices of general confining-string junctions"**
 (V. H. Thakur). Each script prints its results; `run_all.sh` runs everything and stores the output in `results/`.
 
 ## Quick start
@@ -37,3 +37,14 @@ See `CITATION.cff`. A DOI will be added after the first release.
 
 ## License
 MIT (see `LICENSE`).
+
+## Reproducibility notes
+
+- Old Table 2 (`closed_channel.py`, part 2) quoted `ln(ratio)/(q~_x q~_y)` at L/R = 6 and 8: those entries sit at the
+  numerical-noise floor of the quadrature (1e-12 .. 1e-16) and are **not** meaningful; the revised Table 2 is produced by
+  `exact_closed.py`, which compares against an exact analytic expression and reports residuals ~1e-15.
+- `run_all.sh` regenerates every file in `results/`.
+- Software versions: see `requirements.txt` (numpy, scipy, sympy, mpmath).
+
+### Added in the revision (scripts and the sections they support)
+- `displacement_sector.py` - sunset finite parts (220-digit), tadpole vs dE0/dR_a, Nambu-Goto Hadamard derivation and general-tension formula (Sec. 6, App. B, C)

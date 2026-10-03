@@ -1,0 +1,27 @@
+=== (1) max |sum_S t_j| over |S|=k vs sin(k pi/N)/sin(pi/N) ===
+  N=4:  [(2, np.float64(1.414214), np.float64(1.414214))]
+  N=5:  [(2, np.float64(1.618034), np.float64(1.618034)), (3, np.float64(1.618034), np.float64(1.618034))]
+  N=6:  [(2, np.float64(1.732051), np.float64(1.732051)), (3, np.float64(2.0), np.float64(2.0)), (4, np.float64(1.732051), np.float64(1.732051))]
+  N=7:  [(2, np.float64(1.801938), np.float64(1.801938)), (3, np.float64(2.24698), np.float64(2.24698)), (4, np.float64(2.24698), np.float64(2.24698)), (5, np.float64(1.801938), np.float64(1.801938))]
+  N=8:  [(2, np.float64(1.847759), np.float64(1.847759)), (3, np.float64(2.414214), np.float64(2.414214)), (4, np.float64(2.613126), np.float64(2.613126)), (5, np.float64(2.414214), np.float64(2.414214)), (6, np.float64(1.847759), np.float64(1.847759))]
+
+=== (2) Casimir scaling vs sine-law bound sigma_k/sigma, all k ===
+  N=4: (k, Casimir, sine) = [(2, 1.3333, np.float64(1.4142), 'UNSTABLE')]
+  N=5: (k, Casimir, sine) = [(2, 1.5, np.float64(1.618), 'UNSTABLE')]
+  N=6: (k, Casimir, sine) = [(2, 1.6, np.float64(1.7321), 'UNSTABLE'), (3, 1.8, np.float64(2.0), 'UNSTABLE')]
+  N=8: (k, Casimir, sine) = [(2, 1.7143, np.float64(1.8478), 'UNSTABLE'), (3, 2.1429, np.float64(2.4142), 'UNSTABLE'), (4, 2.2857, np.float64(2.6131), 'UNSTABLE')]
+  N=10: (k, Casimir, sine) = [(2, 1.7778, np.float64(1.9021), 'UNSTABLE'), (3, 2.3333, np.float64(2.618), 'UNSTABLE'), (4, 2.6667, np.float64(3.0777), 'UNSTABLE'), (5, 2.7778, np.float64(3.2361), 'UNSTABLE')]
+
+=== (3) exact H minimisation vs second-order formula (R=sigma=1; star energy N) ===
+  N=4 sigma2=1.3942 (eps=0.02): gain exact=3.944604e-04  second-order formula=4.000000e-04  ratio=0.9862
+  N=4 sigma2=1.3642 (eps=0.05): gain exact=2.416039e-03  second-order formula=2.500000e-03  ratio=0.9664
+  N=4 sigma2=1.3142 (eps=0.1): gain exact=9.360047e-03  second-order formula=1.000000e-02  ratio=0.9360
+  N=4 at threshold sigma2=2cos(pi/N): E_H,min - E_star = +1.308e-10  (>=0: star is the minimum)
+  N=5 sigma2=1.5980 (eps=0.02): gain exact=3.930609e-04  second-order formula=4.000000e-04  ratio=0.9827
+  N=5 sigma2=1.5680 (eps=0.05): gain exact=2.396233e-03  second-order formula=2.500000e-03  ratio=0.9585
+  N=5 sigma2=1.5180 (eps=0.1): gain exact=9.224583e-03  second-order formula=1.000000e-02  ratio=0.9225
+  N=5 at threshold sigma2=2cos(pi/N): E_H,min - E_star = +8.208e-10  (>=0: star is the minimum)
+  N=6 sigma2=1.7121 (eps=0.02): gain exact=4.666419e-04  second-order formula=4.800000e-04  ratio=0.9722
+  N=6 sigma2=1.6821 (eps=0.05): gain exact=2.803935e-03  second-order formula=3.000000e-03  ratio=0.9346
+  N=6 sigma2=1.6321 (eps=0.1): gain exact=1.057304e-02  second-order formula=1.200000e-02  ratio=0.8811
+  N=6 at threshold sigma2=2cos(pi/N): E_H,min - E_star = +5.471e-11  (>=0: star is the minimum)
