@@ -6,3 +6,6 @@ authors:
     given-names: Vishal Hiralal
     orcid: "https://orcid.org/0009-0008-8406-0508"
 license: MIT
+abstract: >-
+Spectra, one-loop energies, O(R^-3) corrections, closed-string vertices and stability of confining-string junctions of arbitrary valence, tensions, directions and arm lengths, governed by a tension tensor. This repository reproduces every numerical statement in the associated manuscript.
+repository-code: "https://github.com/vishal1601-2005/string-junction-checks"
