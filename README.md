@@ -48,3 +48,6 @@ MIT (see `LICENSE`).
 
 ### Added in the revision (scripts and the sections they support)
 - `displacement_sector.py` - sunset finite parts (220-digit), tadpole vs dE0/dR_a, Nambu-Goto Hadamard derivation and general-tension formula (Sec. 6, App. B, C)
+- `sunset_second_regulator.py` - per-mode Gaussian regulator for the three sunset sums (regulator-dependence caveat, App. C)
+- `cnumber_and_pointsplit.py` - c-number test of the displacement vertex (exact -(D-2) pi delta^2/(24 L^3)) and point-splitting universality with two profiles (App. C)
+- `ward_identity_regulator_test.py` - exact translation Ward identities (finite parts +1/12 and -1/24) in two regularisation schemes (App. C)

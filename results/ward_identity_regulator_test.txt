@@ -1,0 +1,3 @@
+D-end (integers): per-mode Gaussian finite part = 0.0833259   exact = 0.0833333   leading coefficients 1/eps^3, 1/eps: 0.16695, -0.1477
+N-end (half-integers): per-mode Gaussian finite part = -0.0416596   exact = -0.0416667   leading coefficients 1/eps^3, 1/eps: 0.16695, 0.073852
+vertex-separation scheme (exact antiderivatives): D-end 1/12, N-end -1/24  -> both exact
